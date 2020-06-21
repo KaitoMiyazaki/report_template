@@ -1,0 +1,73 @@
+%\documentclass{ltjsarticle}
+\documentclass[../main]{subfiles}
+%\usepackage{listings}%,jlisting}
+
+%\usepackage{url} %URLをリンクとして表示するためのパッケージ
+
+
+\lstset{
+    basicstyle={\ttfamily\small}, %書体の指定
+    frame=tRBl, %フレームの指定
+    framesep=10pt, %フレームと中身（コード）の間隔
+    breaklines=true, %行が長くなった場合の改行
+    linewidth=12cm, %フレームの横幅
+    lineskip=-0.5ex, %行間の調整
+    tabsize=2 %Tabを何文字幅にするかの指定
+}
+
+
+%\title{サンプルレポート}
+%\author{MAST編集部}
+
+
+\begin{document}
+%\maketitle
+
+
+\section{プログラミング}
+プログラミングをしてみましょう。
+\subsection{大量のhoge}
+“hoge”とは，プログラミングなどで，「意味のないこと」を表現するために利用されることが多い文字列である。
+情報処理の世界ではメタ構文変数（Metasyntactic variable）
+とも呼ばれる\footnote{hogeとは – はてなキーワード: \url{http://d.hatena.ne.jp/keyword/hoge}}。\\
+
+
+for文を使わずに“hoge”を大量に表示するプログラムを作ろう。
+
+
+\begin{itemize}
+\item ソースコード
+\begin{lstlisting}
+#include 
+
+
+int main(void){
+    printf(“hoge\n”); //hogeのはじまり
+    printf(“hoge\n”);
+    printf(“hoge\n”);
+    printf(“（省略）\n”);
+    printf(“hoge\n”);
+    printf(“hoge\n”);
+
+
+    return 0;
+}
+\end{lstlisting}
+
+
+\item 実行結果
+\begin{lstlisting}
+$ cc hoge.c
+$ ./a.out
+hoge
+hoge
+hoge
+（省略）
+hoge
+hoge
+$
+\end{lstlisting}
+\end{itemize}
+
+
+\end{document}
